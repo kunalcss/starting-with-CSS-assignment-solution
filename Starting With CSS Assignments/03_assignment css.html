@@ -1,0 +1,124 @@
+<!-- 3.Develop an HTML form with various input elements. Use CSS to style the form,including setting background colors for input fields. Create a custom color palette for the form elements, and demonstrate how to apply opacity to one of the form sections . -->
+
+<!-- solution. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>sign-up form</title>
+<style>
+    .container:hover{
+        background-color: cornflowerblue;
+
+    }
+    .container{
+        border: 3px solid black;
+        background-color: aqua;
+        width: 600px;
+        margin-left: 350px;
+        margin-top: 100px;
+        padding-left: 10px;
+    }
+input{
+    border: 2px solid blue;
+    background-color: pink;
+}
+h1{
+    text-align: center;
+    color: black;
+    font-size: 40px;
+text-decoration: underline;
+
+}
+::placeholder{
+    opacity: 0.60;
+    color: purple;
+}
+button{
+    border: 2px solid blue;
+}
+button:hover{
+    background-color: black;
+    color: aliceblue;
+    border: 2px solid blue;
+    cursor: pointer;
+}
+.first{
+    background-color: crimson;
+    
+}
+.last{
+    background-color:red;
+    
+}
+.email{
+    background-color: yellow;
+    
+}
+.pass{
+    background-color: blue;
+    
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sign-up Form</h1>
+<form>
+<label for="firstName">First Name:
+
+
+<input class="first" type="text" name="firstName" placeholder="enter your Firstname" id="firstName"required  />
+</label>
+
+
+<label for="lastName">Last Name:
+<input class="last" type="text" name="lastName" placeholder="enter your Lastname" id="lastName" required />
+</label>
+<br>
+<br>
+<label for="email">Email:
+<input class="email" type="email" name="email" placeholder="Email" id="email" required />
+</label>
+<br><br>
+<label for="password">Password:
+<input class="pass" type="password" name="password" placeholder="********" id="password" required min="0" max="8" />
+</label>
+<!-- <br>
+<br> -->
+<label for="confirmPassword">Confirm Password:
+<input type="password" name="confirmPassword" placeholder="********"
+id="confirmPassword" required min="0" max="8"  />
+</label>
+<br>
+<br>
+<label for="age">Age:
+<input type="number" name="age"  id="age" placeholder="your age in number" required min=0 max=150 />
+</label>
+<br>
+<br>
+<label for="">Gender:
+<input type="radio" id="male" value="male" name="gender" checked />
+<label for="male">Male</label>
+<input type="radio" id="female" value="female" name="gender" />
+<label for="female">Female</label>
+<input type="radio" id="other" value="other" name="gender" />
+<label for="other">Other</label>
+</label>
+<br>
+<br>
+<label for="terms">terms:
+<input type="checkbox" id="terms" required /> I agree to terms and conditions
+</label>
+<br>
+<br>
+<button type="submit">Register</button>
+</form>
+</div>
+</body>
+</html>
+
+

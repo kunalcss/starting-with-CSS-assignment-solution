@@ -1,0 +1,65 @@
+<!-- 2.Build an HTML page with multiple paragraphs,each assigned a unique class name.write CSS rules using class selectors to apply distinct styling to each paragraph. Follow the BEM naming convention and explain how you have named the classes. -->
+
+<!-- solution. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Using Class to target elements</title>
+</head>
+<style>
+  .Box{
+    margin-left: 300px;
+    margin-top: 20px;
+width: 900px;
+height: auto;
+border: 3px solid black;
+padding: 0%;
+    }
+    .come{
+        background-color: darkcyan;
+        color: brown;
+        font-size: 50px;
+    }
+.Box_name{
+background-color : pink;
+Color : purple ;
+font-size : 50px ;
+}
+.Box_hobby{
+Background-color : blue;
+Color : black ;
+font-size : 50px ;
+}
+.Box_age{
+Background-color : blue;
+Color : red ;
+font-size : 30px ;
+}
+.Box_about{
+Background-color : green;
+Color : blue ;
+font-size : 50px ;
+}
+.Box_name-all{
+Background-color : black;
+Color : blue ;
+font-size : 40px;
+}
+.container_boxes-come{
+Background-color : green;
+Color : red ;
+font-size : 200px;
+}
+</style>
+<body>
+<div class = "Box">
+<p class = "Box_name">My name is Kunal Sharma <p class = "Box_name-all">I am very good listener and a good writer</p></p>
+<p class = "Box_hobby">My hobby is to play cricket</p>
+<p class = "Box_age">I am 19 years old </p>
+<p class = "Box_about">I am a very hardworking person</p>
+<div>
+<p class = "come">that's all the thing which is matter to that</p>
+</div>
+</body>
+</html>

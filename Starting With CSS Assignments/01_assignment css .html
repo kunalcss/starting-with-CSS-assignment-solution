@@ -1,0 +1,52 @@
+<!-- 1.Create a simple page with some div tags and show  different ways to add CSS as well as what happens when you target the same elements with inline , internal ,and external CSS. Also , utilize comments in the project where required . 
+solution. -->
+
+<!-- h1 = targatting by the inline css
+h2 = targetting by the internal css
+h3 = targetting by the external css -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>targetting elements</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h2{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: blueviolet;">My Name Is Kunal Sharma</h1>
+    <h2>My Name Is Kunal Sharma</h2>
+    <h3>My Name Is Kunal Sharma</h3>
+</body>
+</html>
+
+<!-- priority check -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h4{
+            color: pink;
+        }
+        h5{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h4 style="color: yellow;">I am 19 years old.</h4>
+    <h5> I am a very good person .</h5>
+</body>
+</html>
+
+<!-- priority = inline > internal > external . -->
